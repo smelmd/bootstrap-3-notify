@@ -1,0 +1,43 @@
+.notify-collector{
+  min-width: 300px;
+  max-width: 25%;
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1050;
+}
+.notify-dialog{
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+.notify-content{
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px 6px 6px 6px;
+  outline: medium none;
+  position: relative;
+}
+.notify-header{
+  border-bottom: 1px solid #E5E5E5;
+  min-height: 20.4286px;
+  padding: 1px 5px 1px;
+}
+.notify-body{
+  padding: 10px;
+  position: relative;
+  min-height: 50px;
+}
+.notify-content span.glyphicon{
+  font-size: 32px;
+  padding: 4px 8px 0;
+  float:left;
+}
+.notify-collector.top-right{ top: 10px; right: 15px; }
+.notify-collector.top-left{ top: 10px; left: 15px; }
+.notify-collector.top-center{ top: 10px; left: 50%; margin-left: -150px; }
+
+.notify-collector.bottom-right{ bottom: 10px; right: 15px; }
+.notify-collector.bottom-left{ bottom: 10px; left: 15px; }
+.notify-collector.bottom-center{ bottom: 10px; left: 50%; margin-left: -150px; }

@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bs3notify/bs3notify.css">
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="bs3notify/bs3notify.js"></script>
+  </head>
+  <body>
+  <NOSCRIPT><font size='7'>Enable JavaScript</font></NOSCRIPT>
+<script>
+ $.bs3notify({text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', position:'bottom-left'});
+ 
+ $.bs3notify({glyphicon:'glyphicon-bullhorn', text: 'custom glyphicon', position:'top-left', closetime: 0, onClose: function(){alert('reload'); location.reload();}});
+ 
+ $.bs3notify({type: 'info', text: 'position: top-right', title: 'top-right', position:'top-right' });
+ $.bs3notify({type: 'info', text: 'position: top-center', title: 'top-center', position:'top-center'});
+ $.bs3notify({type: 'info', text: 'position: top-left', title: 'top-left', position:'top-left'});
+
+ $.bs3notify({type: 'info', text: 'position: bottom-right', title: 'bottom-right', position:'bottom-right'});
+ $.bs3notify({type: 'info', text: 'position: bottom-center', title: 'bottom-center', position:'bottom-center'});
+ $.bs3notify({type: 'info', text: 'position: bottom-left', title: 'bottom-left', position:'bottom-left'});
+
+ $.bs3notify({type: 'info',    text: 'notify type <span class="label label-info">info</span>', title: 'notify'});
+ $.bs3notify({type: 'error',   text: 'notify type error', title: '<span class="label label-danger">error</span>'});
+ $.bs3notify({type: 'warning', text: 'notify type warning'});
+ $.bs3notify({type: 'success', text: 'notify type success', title: 'success'}); 
+</script> 
+  </body>
+</html>
